@@ -1,0 +1,45 @@
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/blurred-background-vintage-filter-customer-coffee-shop-blur-background-with-bokeh.jpg);
+}
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+.inner {
+  background-color: #ffffff1f;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.449);
+  padding: 3%;
+  z-index: 999;
+  outline: rgba(245, 245, 245, 0.637) 2px solid;
+}
+.inner .head-title {
+  color: #170c0e;
+  font-size: 35px;
+  font-weight: 700;
+}
+.btn {
+  outline: none !important;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid #444037;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: #444037;
+  color: beige;
+}
+.layer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0000005f;
+}
+
+
