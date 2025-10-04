@@ -3,9 +3,11 @@ var signupEmail = document.getElementById("signupEmail");
 var signupPassword = document.getElementById("signupPassword");
 var exist = document.getElementById("exist");
 var incorrect = document.getElementById("incorrect");
+var passwordIcon = document.getElementById("iconPass");
+
 
 var personalData = JSON.parse(localStorage.getItem("personalData")) || [];
-
+clear();
 function signUp() {
   if (
     signupName.value !== "" &&
@@ -69,6 +71,23 @@ function clear() {
     inputs[i].classList.remove("is-valid", "is-invalid");
   }
 }
+
+//  toggle password visibility
+passwordIcon.addEventListener("click", function () {
+  if (signupPassword.type === "password") {
+    signupPassword.type = "text";
+    passwordIcon.classList.remove("fa-eye-slash");
+    passwordIcon.classList.add("fa-eye");
+  } else {
+    signupPassword.type = "password";
+    passwordIcon.classList.remove("fa-eye");
+    passwordIcon.classList.add("fa-eye-slash");
+  }
+});
+
+
+
+
 
 // Check Vaildation
 function validName() {

@@ -6,11 +6,17 @@
     <!-- Icon Img -->
     <link rel="icon" type="image/png" href="./images/5818321.png" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <!-- Bootstrap style -->
     <link
@@ -33,20 +39,35 @@
           <div class="col-12 d-flex align-items-center justify-content-center">
             <div class="inner rounded-4 py-5 text-center">
               <h1 class="head-title mb-4">Smart Login System</h1>
-              <input
-                id="signinEmail"
-                class="form-control my-3"
-                placeholder="Enter your email"
-                type="text"
-              />
+              <div class="input-box position-relative">
+                <input
+                  id="signinEmail"
+                  class="form-control my-3"
+                  placeholder="Enter your email"
+                  type="text"
+                />
+                <div
+                  class="icon-input position-absolute end-0 mx-2 top-25"
+                >
+                  <i class="icon ps-2 fa-solid fa-envelope fs-5 me-1"></i>
+                </div>
+              </div>             
+               <div class="input-box position-relative">
               <input
                 id="signinPassword"
                 class="form-control my-3"
                 placeholder="Enter your password"
                 type="password"
               />
+                <div
+                  class="icon-input position-absolute end-0 mx-2 top-25"
+                >
+                  <i id="iconPass" class="icon ps-2 fa-solid fa-eye-slash fs-5 me-1"></i>
+                </div>
+              </div>
+
               <p>
-                <span class="text-black m-3 mb-0 d-none" id="incorrect"
+                <span class="text-white fw-bold m-3 mb-0 d-none" id="incorrect"
                   >All inputs is required</span
                 >
               </p>

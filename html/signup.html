@@ -7,11 +7,13 @@
     <!-- Icon Img -->
     <link rel="icon" type="image/png" href="../images/4421484.png" />
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Font Awsome -->
+       <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <!-- Bootstrap style -->
     <link
@@ -32,42 +34,66 @@
         <div class="row">
           <div class="col-12 d-flex align-items-center justify-content-center">
             <div class="inner text-center rounded-4">
-              <h1 class="head-title mb-2">Smart Login System</h1>
+              <h1 class="head-title mb-2">Smart Signup System</h1>
 
-              <input
+              <div class="input-box position-relative">
+                    <input
                 id="signupName"
                 oninput="validName()"
-                class="form-control mt-4 mb-1"
-                placeholder="Enter your name"
+                class="form-control mt-4 ps-5"
+                placeholder="User Name"
                 type="text"
               />
+                <div
+                  class="icon-input h-100 position-absolute start-0 mx-2 top-25"
+                >
+                  <i class="icon ps-1 fa-solid fa-user fs-5 me-2"></i>
+                </div>
+              </div>   
               <p id="alertMsg-Name" class="alert alert-danger d-none mt-1 p-2">
                 Name must be 3–20 letters only
               </p>
+              <div class="input-box position-relative">
               <input
                 id="signupEmail"
                 oninput="validEmail()"
-                class="form-control mt-3 mb-1"
-                placeholder="Enter your email"
+                class="form-control mt-4 mb-1 ps-5"
+                placeholder="Email"
                 type="email"
               />
+                <div
+                  class="icon-input h-100 position-absolute start-0 mx-2 top-25"
+                >
+                  <i class="icon ps-1 fa-solid fa-envelope fs-5 me-2"></i>
+                </div>
+              </div>  
               <p id="alertMsg-Email" class="alert alert-danger d-none mt-1 p-2">
                 Enter valid email (e.g. name@example.com)
               </p>
-              <input
+              <div class="input-box position-relative">
+              <div class="input-box position-relative">
+                    <input
                 id="signupPassword"
                 oninput="validPassword()"
-                class="form-control mt-3 mb-1"
-                placeholder="Enter  password"
+                class="form-control mt-4 mb-1 ps-5"
+                placeholder="Password"
                 type="password"
               />
+                <div
+                  class="icon-input h-100 position-absolute start-0 mx-2 top-25"
+                >
+                  <i id="iconPass" class="icon ps-1 fa-solid fa-eye-slash fs-5 me-2"></i>
+                </div>
+              </div>  
+
+              </div>  
               <p id="alertMsg-Pass" class="alert alert-danger d-none mt-1 p-2">
                 Password must be at least 6 characters
               </p>
               <p id="exist" class="text-danger mt-4 fs-6 fw-bold"></p>
 
               <p>
-                <span class="text-black m-2 d-none" id="incorrect"
+                <span class="text-white fw-bold m-2 d-none" id="incorrect"
                   >All inputs is required</span
                 >
               </p>

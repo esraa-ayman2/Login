@@ -4,8 +4,18 @@
 .animate {
   animation: pop 1s ease forwards;
 }
-
-@keyframes pop {
+.home {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/e684d28d15c0cd42069bec09ea7d2a95.jpg);
+  color: white;
+}
+.container p{
+  color: #01355a;
+}
+/* @keyframes pop {
   0% {
     transform: scale(0);
     opacity: 0;
@@ -17,24 +27,39 @@
   100% {
     transform: scale(1);
   }
-}
+} */
 a {
   text-decoration: none;
-  color: black;
+  color: #002f51;
   padding: 10px 22px;
   border-radius: 3px;
-  outline: black 2px solid;
+  outline: #00549d 2px solid;
   transition: all 0.5s;
   width: fit-content;
 }
 a:hover {
   color: white;
-  background: #000;
-  outline: #000 2px solid;
+  background: #003258;
+  outline: #020074  2px solid;
 }
 .h-90 {
   height: 92.5%;
 }
+nav{
+  z-index: 66;
+
+}
 section {
   overflow-y: hidden;
 }
+.layer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0000008f;
+  z-index: 2;
+}
+.title{
+  position: relative;
+  z-index: 99;
+}
+
